@@ -40,7 +40,6 @@ BOARD_USERDATAEXTRAIMAGE_PARTITION_NAME := 64G
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/oneplus/bacon/rootdir/etc/fstab.bacon
-RECOVERY_VARIANT := cm
 
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
 
@@ -54,6 +53,7 @@ BOARD_VOLD_CRYPTFS_MIGRATE := true
 BOARD_NFC_CHIPSET := pn547
 
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
+AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 
 # inherit from the proprietary version
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
