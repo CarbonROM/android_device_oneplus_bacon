@@ -47,10 +47,3 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=oneplus/bacon/bacon:4.4.2/KVT49L/XNPH25R:user/release-keys \
                                 PRIVATE_BUILD_DESC="Carbon_bacon-user 4.4.2 KVT49L XNPH25R release-keys"
-
-PRODUCT_COPY_FILES += \
-    device/oneplus/bacon/prebuilt/common/app/CameraNext.apk:system/app/CameraNext/CameraNext.apk \
-    device/oneplus/bacon/prebuilt/common/app/GalleryNext.apk:system/app/GalleryNext/GalleryNext.apk \
-    device/oneplus/bacon/prebuilt/common/app/Hexo.apk:system/app/Hexo/Hexo.apk \
-    device/oneplus/bacon/prebuilt/common/app/HexoIcons.apk:system/app/HexoIcons/HexoIcons.apk \
-    device/oneplus/bacon/prebuilt/common/app/ThemeStore.apk:system/app/ThemeStore/ThemeStore.apk
