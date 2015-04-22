@@ -26,20 +26,13 @@ PRODUCT_NAME := carbon_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := One
-PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.bacon.$(shell date +%m%d%y).$(shell date +%H%M%S)
-PRODUCT_PROPERTY_OVERRIDES += ro.carbon.device=Carbon_bacon
 CARBON_BUILDTYPE := NIGHTLY
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BRAND := oneplus
-TARGET_VENDOR := oneplus
 TARGET_VENDOR_PRODUCT_NAME := bacon
-TARGET_VENDOR_DEVICE_NAME := bacon
-
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=bacon \
-                                PRODUCT_NAME=bacon
-
+TARGET_VENDOR_DEVICE_NAME := One
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=One PRODUCT_NAME=bacon
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
