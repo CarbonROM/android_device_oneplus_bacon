@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Inherit some common Carbon stuff.
-$(call inherit-product, vendor/stelix/config/common_phone.mk)
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 PRODUCT_NAME := carbon_bacon
 PRODUCT_DEVICE := bacon
