@@ -144,4 +144,7 @@
     <integer name="config_screenBrightnessDoze">5</integer>
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    
+    <!-- Hardware keys on/off option -->
+    <bool name="config_hwKeysPref">true</bool>
 </resources>
