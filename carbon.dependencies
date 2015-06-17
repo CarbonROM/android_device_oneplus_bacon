@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_oppo_msm8974-common",
+    "remote": "carbon",
+    "repository": "CarbonROM/android_device_oppo_msm8974-common",
     "target_path": "device/oppo/msm8974-common",
-    "revision": "cm-12.1"
+    "revision": "lp5.1"
   },
   {
     "remote": "cm",
@@ -28,6 +28,12 @@
     "repository": "android_kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974",
     "revision": "cm-12.1"
+  },
+  {
+    "remote": "gh",
+    "repository": "ArchiDroid/Toolchain",
+    "target_path": "prebuilts/gcc/linux-x86/arm/linaro-4.9-arm-eabi",
+    "revision": "linaro-4.9-arm-eabi"
   },
   {
     "remote": "tm",
