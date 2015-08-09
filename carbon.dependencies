@@ -1,9 +1,9 @@
 [
   {
     "remote": "carbon",
-    "repository": "CarbonROM/android_device_oppo_msm8974-common",
+    "repository": "CarbonTEAM/android_device_oppo_msm8974-common",
     "target_path": "device/oppo/msm8974-common",
-    "revision": "lp5.1"
+    "revision": "lp5.1.1"
   },
   {
     "remote": "cm",
