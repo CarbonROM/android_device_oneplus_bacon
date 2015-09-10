@@ -1,12 +1,6 @@
 [
   {
     "remote": "cm",
-    "repository": "Cyanogenmod/android_device_oppo_msm8974-common",
-    "target_path": "device/oppo/msm8974-common",
-    "revision": "cm-12.1"
-  },
-  {
-    "remote": "cm",
     "repository": "Cyanogenmod/android_device_oppo_common",
     "target_path": "device/oppo/common",
     "revision": "cm-12.1"
@@ -30,13 +24,13 @@
     "revision": "linaro-4.9-arm-eabi"
   },
   {
-    "remote": "tm",
+    "remote": "td",
     "repository": "proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "revision": "cm-12.1"
   },
   {
-    "remote": "td",
+    "remote": "tm",
     "repository": "proprietary_vendor_oppo",
     "target_path": "vendor/oppo",
     "revision": "cm-12.1"
