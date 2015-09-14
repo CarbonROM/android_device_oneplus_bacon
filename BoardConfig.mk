@@ -18,6 +18,7 @@
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
 # Kernel
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/linaro-4.9-arm-eabi/bin/"
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
