@@ -218,6 +218,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine-8974.conf
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    OneplusDoze
+
 # Widevine
 PRODUCT_PACKAGES += \
     libshim_wvm
