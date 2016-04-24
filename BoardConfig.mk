@@ -84,7 +84,7 @@ BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Off screen gestures
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/gesture_enable"
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
