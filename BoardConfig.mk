@@ -146,6 +146,9 @@ BOARD_NFC_CHIPSET := pn547
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Powerhal
+TARGET_PROVIDES_POWERHAL := true
+
 # Radio
 TARGET_RIL_VARIANT := caf
 
