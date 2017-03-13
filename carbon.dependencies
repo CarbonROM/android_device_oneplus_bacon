@@ -11,8 +11,20 @@
   },
   { 
     "remote"      : "lineage",
-    "repository"  : "android_packages_resources_devicesettings",
+    "repository"  : "LineageOS/android_packages_resources_devicesettings",
     "target_path" : "packages/resources/devicesettings",
     "revision"    : "cm-14.1"
+  },
+  {
+   "remote"     : "lineage",
+   "repository" : "LineageOS/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "revision"   : "cm-14.1"
+  },
+  {
+   "remote"     : "lineage",
+   "repository" : "LineageOS/android_external_sony_boringssl-compat",
+   "target_path": "external/boringssl-compat",
+   "revision"   : "cm-14.1"
   }
 ]
