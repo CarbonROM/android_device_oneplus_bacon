@@ -15,13 +15,13 @@
  */
 package com.cyanogenmod.settings.doze;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import cyanogenmod.preference.RemotePreferenceUpdater;
 
-public class DozeReceiver extends RemotePreferenceUpdater {
+public class DozeReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
     private static final String TAG = "OneplusDoze";
@@ -52,3 +52,4 @@ public class DozeReceiver extends RemotePreferenceUpdater {
         notifyChanged(context, DOZE_CATEGORY_KEY);
     }
 }
+
