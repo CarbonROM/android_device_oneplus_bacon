@@ -390,4 +390,14 @@
 
     <!-- Enable blur support -->
     <!--<bool name="config_uiBlurEnabled">true</bool>-->
+
+    <!-- Proximity check on screen on -->
+    <bool name="config_proximityCheckOnWake">true</bool>
+
+    <!-- Proximity check timeout -->
+    <integer name="config_proximityCheckTimeout">250</integer>
+
+    <!-- Proximity check on screen on default -->
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
 </resources>
