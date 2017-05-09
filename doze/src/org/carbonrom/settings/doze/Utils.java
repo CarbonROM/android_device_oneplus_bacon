@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.doze;
+package org.carbonrom.settings.doze;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
