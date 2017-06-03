@@ -400,4 +400,24 @@
     <!-- Proximity check on screen on default -->
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
+   <!-- Whether cpu boost is enabled for application's 1st launch. -->
+   <bool name="config_enableCpuBoostForAppLaunch">true</bool>
+   <integer name="launchboost_timeout_param">2000</integer>
+   <integer-array name="launchboost_param_value">
+       <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
+       <item>0x1</item>        <!-- SCHEDBOOST resource value-->
+       <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ resource opcode-->
+       <item>0x1300</item>      <!-- CPUBOOST MIN_FREQ resource value-->
+       <item>0x40400000</item> <!-- DISABLE_POWER_COLLAPSE resource opcode-->
+       <item>0x1</item>        <!-- DISABLE_POWER_COLLAPSE resource value-->
+   </integer-array>
+   <!-- Whether cpu boost is enabled for animation during exit and entry -->
+   <bool name="config_enablePerfBoostForAnimation">true</bool>
+   <integer name="animationboost_timeout_param">600</integer>
+   <integer-array name="animationboost_param_value">
+       <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
+       <item>0x1</item>        <!-- SCHEDBOOST resource value-->
+       <item>0x44C</item>      <!-- CPUBOOST MIN_FREQ resource value-->
+   </integer-array>
+
 </resources>
