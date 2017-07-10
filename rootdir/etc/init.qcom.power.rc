@@ -108,3 +108,29 @@ on property:dev.bootcomplete=1
     rm /data/system/perfd/default_values
     setprop sys.io.scheduler "bfq"
     write /sys/module/autosmp/parameters/enabled 1
+    write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay 0
+    write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 60000
+    write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 20000
+    write /sys/module/cpu_boost/parameters/boost_ms 30
+    write /sys/module/cpu_boost/parameters/sync_threshold 1267200
+    write /sys/module/cpu_boost/parameters/input_boost_freq 1036800
+    write /sys/kernel/autosmp/conf/cpufreq_down 50
+    write /sys/kernel/autosmp/conf/cpufreq_up 75
+    write /sys/kernel/autosmp/conf/cycle_down 1
+    write /sys/kernel/autosmp/conf/cycle_up 2
+    write /sys/kernel/autosmp/conf/delay 30
+    write /sys/module/msm_pm/modes/cpu0/wfi/idle_enabled 0
+    write /sys/module/msm_pm/modes/cpu0/retention/idle_enabled 0
+    write /sys/module/msm_pm/modes/cpu0/standalone_power_collapse/idle_enabled 0
+    write /sys/block/mmcblk0/queue/scheduler row
+    write /sys/block/mmcblk0/queue/iostats 0
+    write /sys/block/mmcblk0/queue/iosched/hp_swrite_quantum 2
+    write /proc/sys/vm/dirty_ratio 40
+    write /proc/sys/vm/dirty_writeback_centisecs 300
+    write /proc/sys/vm/swappiness 5
+    write /proc/sys/vm/vfs_cache_pressure 71
+    write /proc/sys/kernel/random/read_wakeup_threshold 128
+    write /proc/sys/kernel/random/write_wakeup_threshold 64
+    write /sys/class/timed_output/vibrator/vtg_level 20
+    write /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 960000
