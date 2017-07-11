@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher 9A9F0FBA 1499811656 +0200\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_oneplus_bacon\nnonce 1499811661-32AEA4B67FCA900B893023450672CF850657E703\n\n0000000000000000000000000000000000000000 8f45a9903391e6b482bddc87ed3b041bed00fb33 refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJZZU9IAAoJEHkGJiGanw+6rBwH/iVpk61MguJpymxxjiqOsnhc\ncHSFLfOfMhUAa6IpqztC83kndqGWrOAhu3n/g2d2RrNnsPyr/l+PxxuaqPLpCp2Q\nN5KE6yszdg/EmU2AsJr6X+NxOsP4go5ai5sRcD6kO8Kw1rrgTW2Dzyo5Ay+yFCn/\nNcxAlxSOB/jJvilVQ3/Es+v8SOroma9O5yatvjvhII+dFBav5XtYeXqqd2Lcq7kd\nN+9MI9I3HEoNw1hNYvVcAXtc9TxMq5Jv+Nxg5uI1nc9ztE78+PJU71fpuAHWwNcs\n5r2r667cq5hWYY6t1jaFQhq94h6yRvplRnNXa/xJRTaqAeqdplcyUICn6MrwRQQ\u003d\n\u003dYr9S\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
