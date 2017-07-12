@@ -11,6 +11,8 @@ ro.qualcomm.bt.hci_transport=smd
 ro.bluetooth.dun=false
 ro.bluetooth.sap=false
 
+persist.bt.enableAptXHD=true
+
 # CABL
 ro.qualcomm.cabl=0
 
