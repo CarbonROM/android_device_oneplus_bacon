@@ -83,8 +83,8 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
-# Off screen gestures
-TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+# Double tap to wake
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
@@ -155,7 +155,7 @@ BOARD_NFC_CHIPSET := pn547
 BOARD_USES_QCOM_HARDWARE := true
 
 # Powerhal
-TARGET_POWERHAL_VARIANT := qcom
+TARGET_PROVIDES_POWERHAL := true
 
 # Radio
 TARGET_RIL_VARIANT := caf

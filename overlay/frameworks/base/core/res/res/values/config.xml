@@ -358,6 +358,9 @@
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
     <string-array name="config_mobile_tcp_buffers">
         <item>"lte:2097152,4194304,8388608,262144,524288,1048576"</item>
         <item>"lte_ca:2097152,4194304,8388608,262144,524288,1048576"</item>
@@ -395,138 +398,5 @@
 
     <!-- Proximity check on screen on default -->
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-
-
-   <!-- Whether cpu boost is enabled for application's 1st launch. -->
-    <bool name="config_enableCpuBoostForAppLaunch">true</bool>
-    <integer name="launchboost_timeout_param">2000</integer>
-    <integer-array name="launchboost_param_value">
-        <item>0x40804000</item> <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode-->
-        <item>0xFFF</item>     <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x40804100</item> <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode-->
-        <item>0x20D</item>     <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode-->
-        <item>0xFFF</item>     <!-- CPUBOOST MIN_FREQ resource value-->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode-->
-        <item>0x20D</item>     <!-- CPUBOOST MIN_FREQ resource value-->
-        <item>0x41800000</item> <!-- CPUBW_MIN_FREQ resource opcode-->
-        <item>140</item>       <!-- CPUBW_MIN_FREQ resource value-->
-        <item>0x40400000</item> <!-- POWER COLLAPSE resource opcode-->
-        <item>0x1</item>        <!-- POWER COLLAPSE resource value-->
-        <item>0x42C10000</item> <!-- STORAGE CLK SCALING resource opcode-->
-        <item>0x1</item>        <!-- STORAGE CLK SCALING resource value-->
-    </integer-array>
-   <bool name="config_enableCpuBoostForOverScrollerFling">true</bool>
-   <integer-array name="flingboost_param_value">
-        <item>0x41800000</item> <!-- CPUBW_MIN_FREQ resource opcode-->
-        <item>0x33</item>       <!-- CPUBW_MIN_FREQ resource value-->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode -->
-        <item>0x4B0</item> <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode -->
-        <item>0x4B0</item> <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40C28000</item> <!-- SCHEDGROUP resource opcode-->
-        <item>0x1</item>        <!-- SCHEDGROUP resource value-->
-   </integer-array>
-
-   <bool name="config_enableCpuBoostForScroller">true</bool>
-   <integer-array name="scrollboost_param_value">
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode -->
-        <item>0x506</item> <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode -->
-        <item>0x420</item> <!-- CPUBOOST MIN_FREQ resource value -->
-   </integer-array>
-
-
-    <!-- Extended Boosts for QPerformance -->
-
-    <!-- Boost parameters which get passed to QPerformance -->
-    <integer-array name="onbootboost_param_value">
-       <item>0x40804100</item> <!-- CPUBOOST_MAX_FREQ Core resource opcode-->
-       <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-       <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ Core resource opcode -->
-       <item>0x6A4</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-    </integer-array>
-
-    <!-- Boost parameters which get passed to QPerformance -->
-    <integer-array name="qboost_weak_param_value">
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ Core resource opcode -->
-        <item>0x514</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-    </integer-array>
-    <integer-array name="qboost_strong_param_value">
-        <item>0x40804100</item> <!-- CPUBOOST_MAX_FREQ Core resource opcode-->
-        <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x41800000</item> <!-- CPUBW_MIN_FREQ resource opcode-->
-        <item>140</item>        <!-- CPUBW_MIN_FREQ resource value-->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ Core resource opcode -->
-        <item>0x578</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40400000</item> <!-- PWR_CLPS DIS resource opcode-->
-        <item>0x1</item>        <!-- PWR_CLPS DIS resource value-->
-    </integer-array>
-
-    <!-- Keycodes of gestures. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">183</integer>
-
-    <integer name="config_drawVKeyCode">61</integer>
-
-    <integer name="config_drawInverseVKeyCode">62</integer>
-
-    <integer name="config_drawOKeyCode">59</integer>
-
-    <integer name="config_drawMKeyCode">88</integer>
-
-    <integer name="config_drawWKeyCode">87</integer>
-
-    <integer name="config_drawArrowLeftKeyCode">63</integer>
-
-    <integer name="config_drawArrowRightKeyCode">64</integer>
-
-    <integer name="config_oneFingerSwipeUpKeyCode">68</integer>
-
-    <integer name="config_oneFingerSwipeRightKeyCode">65</integer>
-
-    <integer name="config_oneFingerSwipeDownKeyCode">67</integer>
-
-    <integer name="config_oneFingerSwipeLeftKeyCode">66</integer>
-
-    <integer name="config_twoFingerSwipeKeyCode">60</integer>
-
-    <!-- Default settings for gestures
-            0 - Disabled
-            1 - Wake device
-            2 - Toggle flashlight
-            3 - Toggle airplane mode
-            4 - Play/Pause music
-            5 - Next music
-            6 - Previous music
-            7 - Open camera
-            8 - Open dialer -->
-    <integer name="config_doubleTapDefault">1</integer>
-
-    <integer name="config_drawVDefault">2</integer>
-
-    <integer name="config_drawInverseVDefault">3</integer>
-
-    <integer name="config_drawODefault">7</integer>
-
-    <integer name="config_drawMDefault">0</integer>
-
-    <integer name="config_drawWDefault">0</integer>
-
-    <integer name="config_drawArrowLeftDefault">6</integer>
-
-    <integer name="config_drawArrowRightDefault">5</integer>
-
-    <integer name="config_oneFingerSwipeUpDefault">0</integer>
-
-    <integer name="config_oneFingerSwipeRightDefault">0</integer>
-
-    <integer name="config_oneFingerSwipeDownDefault">0</integer>
-
-    <integer name="config_oneFingerSwipeLeftDefault">0</integer>
-
-    <integer name="config_twoFingerSwipeDefault">4</integer>
-
-    <!-- Whether to to intercept inputs on screen off. -->
-    <bool name="config_enableKeyHandler">true</bool>
 
 </resources>
