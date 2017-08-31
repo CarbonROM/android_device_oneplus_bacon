@@ -288,4 +288,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# $(call inherit-product, device/oppo/common/common.mk)
