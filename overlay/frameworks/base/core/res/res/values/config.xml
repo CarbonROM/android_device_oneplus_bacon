@@ -358,6 +358,9 @@
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
     <string-array name="config_mobile_tcp_buffers">
         <item>"lte:2097152,4194304,8388608,262144,524288,1048576"</item>
         <item>"lte_ca:2097152,4194304,8388608,262144,524288,1048576"</item>
@@ -464,7 +467,7 @@
     </integer-array>
 
     <!-- Keycodes of gestures. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">183</integer>
+    <!--<integer name="config_doubleTapKeyCode">183</integer>-->
 
     <integer name="config_drawVKeyCode">61</integer>
 
@@ -500,7 +503,7 @@
             6 - Previous music
             7 - Open camera
             8 - Open dialer -->
-    <integer name="config_doubleTapDefault">1</integer>
+    <!--<integer name="config_doubleTapDefault">1</integer>-->
 
     <integer name="config_drawVDefault">2</integer>
 
