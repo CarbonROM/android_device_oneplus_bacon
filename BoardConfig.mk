@@ -85,6 +85,7 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Off screen gestures
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
