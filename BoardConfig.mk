@@ -191,5 +191,8 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
+# Move the modules to it's right place
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # Inherit from the proprietary version
 include vendor/oneplus/bacon/BoardConfigVendor.mk
