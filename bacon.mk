@@ -284,9 +284,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     ueventd.bacon.rc
 
-PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl

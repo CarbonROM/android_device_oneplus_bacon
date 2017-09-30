@@ -409,7 +409,7 @@ service config_bt_addr /system/vendor/bin/btnvtool -O
     group bluetooth radio
     oneshot
 
-service hci_attach /system/bin/sh /system/etc/init.qcom.bt.sh
+service hci_attach /vendor/bin/hci_qcomm_init -e
     class late_start
     user bluetooth
     group bluetooth net_bt_admin oem_2950 diag radio
@@ -419,6 +419,7 @@ service hci_attach /system/bin/sh /system/etc/init.qcom.bt.sh
 
 on property:bluetooth.hciattach=true
     start hci_attach
+    setprop bluetooth.status on
 
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
