@@ -68,6 +68,13 @@ vendor/lib/liblistenjni.so
 -vendor/lib/liblisten.so
 vendor/lib/liblistensoundmodel.so
 
+#Media
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxWmaDec.so
+
 # Perf
 bin/mpdecision
 vendor/lib/libqti-perfd-client.so
