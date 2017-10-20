@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl-legacy \
     android.hardware.camera.provider@2.4-impl-legacy \
     libshim_camera \
-    libshim_cameraclient \
+    libshim_camera_parameters \
     camera.bacon \
     Snap
 
