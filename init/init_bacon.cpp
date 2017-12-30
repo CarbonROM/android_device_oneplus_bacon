@@ -33,11 +33,14 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <android-base/logging.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
 #include "util.h"
+
+using android::init::import_kernel_cmdline;
+using android::init::property_set;
 
 static int read_file2(const char *fname, char *data, int max_size)
 {
