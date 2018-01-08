@@ -91,3 +91,8 @@ wifi.interface=wlan0
 
 # Secure discard
 ro.lockscreen.secdiscard=false
+
+# Qualcomm® aptX™
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
