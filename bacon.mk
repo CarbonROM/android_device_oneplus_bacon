@@ -359,4 +359,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bionic.ld.warning=0
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# $(call inherit-product, device/oppo/common/common.mk)
