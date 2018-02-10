@@ -12,16 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Get the long list of APNs
-PRODUCT_COPY_FILES += device/oneplus/bacon/apns-full-conf.xml:system/etc/apns-conf.xml
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
-# Inherit common telephony configuration
+# Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-PRODUCT_NAME := aosp_bacon
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+
+PRODUCT_NAME := carbon_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
@@ -40,3 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=oneplus/bacon/A0001:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys \
     PRIVATE_BUILD_DESC="bacon-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys"
 endif
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.carbon.maintainer="darjwx"
