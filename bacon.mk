@@ -214,10 +214,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libxml2
 
-# Music
-PRODUCT_PACKAGES += \
-    Phonograph
-
 # NFC
 ifeq ($(TARGET_BUILD_VARIANT),user)
     NFCEE_ACCESS_PATH := $(LOCAL_PATH)/configs/nfcee_access.xml
