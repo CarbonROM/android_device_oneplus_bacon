@@ -1,2 +1,2 @@
 #============= mpdecision ==============
-allow mpdecision system_data_file:dir write;
+allow mpdecision system_data_file:dir { add_name write };
