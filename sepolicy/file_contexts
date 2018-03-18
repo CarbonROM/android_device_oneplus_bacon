@@ -28,3 +28,6 @@
 
 # audiod
 /system/bin/audiod                            u:object_r:audiod_exec:s0
+
+# sysfs
+/sys/systeminfo/pcb_version                   u:object_r:sysfs:s0
