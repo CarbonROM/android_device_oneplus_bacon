@@ -4,3 +4,5 @@ allow mm-qcamerad camera_socket:sock_file { create unlink write };
 allow mm-qcamerad camera_data_file:sock_file { create unlink };
 allow mm-qcamerad sysfs:file { read open };
 allow mm-qcamerad system_data_file:sock_file { create unlink };
+allow mm-qcamerad system_data_file:file create;
+
