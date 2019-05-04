@@ -18,8 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit from Potato vendor
+# Inherit from Carbon vendor
 $(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 PRODUCT_NAME := carbon_bacon
 PRODUCT_DEVICE := bacon
