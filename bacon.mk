@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service.bacon \
     camera.msm8974 \
-    Snap-bacon
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
