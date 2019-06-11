@@ -27,10 +27,6 @@ on enable-low-power
 
     write /sys/module/msm_thermal/core_control/enabled 0
 
-    write /sys/devices/system/cpu/cpu1/online 1
-    write /sys/devices/system/cpu/cpu2/online 1
-    write /sys/devices/system/cpu/cpu3/online 1
-
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
@@ -44,10 +40,6 @@ on enable-low-power
     write /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 100000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000
 
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
     chown root system /sys/devices/system/cpu/cpu1/online
     chown root system /sys/devices/system/cpu/cpu2/online
     chown root system /sys/devices/system/cpu/cpu3/online
@@ -55,12 +47,35 @@ on enable-low-power
     chmod 664 /sys/devices/system/cpu/cpu2/online
     chmod 664 /sys/devices/system/cpu/cpu3/online
 
+    # CPU0
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
+
+    # CPU1
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
+
+    # CPU2
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
+
+    # CPU3
+    write /sys/devices/system/cpu/cpu3/online 1
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 1958400
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
+
     write /sys/module/msm_thermal/core_control/enabled 1
 
-    write /sys/module/cpu_boost/parameters/boost_ms 20
-    write /sys/module/cpu_boost/parameters/sync_threshold 1728000
-    write /sys/module/cpu_boost/parameters/input_boost_freq 1497600
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    # CPU Input Boost
+    write /sys/kernel/cpu_input_boost/ib_freqs "1190400 1497600"
+    write /sys/kernel/cpu_input_boost/ib_duration_ms 1400
+    write /sys/kernel/cpu_input_boost/enabled 1
+
+    # Multicore power saving
+    write /sys/devices/system/cpu/sched_mc_power_savings 1
 
     write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
